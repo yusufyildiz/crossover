@@ -10,7 +10,7 @@ ec2_instance { 'Puppet-Client':
   key_name => 'crossover',
   iam_instance_profile_name     => 's3iam',
   security_groups => ['General Firewall'],
-  user_data => template('/home/ubuntu/setup.sh'),
+  user_data => template('/home/ubuntu/crossover/setup.sh'),
   tags => {
     tag_name => 'crossover',
   },
